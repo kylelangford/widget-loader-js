@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inject HTML</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/demo-styles.css">
+  </head>
+  <body>
+    <div id="main_contentarea" class="main-contentarea">
+      <div class="container container--static">
+        <div id="mainBody">
+          <h1>Title</h1>
+          <h2>Subhead</h2>
+
+          <img src="//via.placeholder.com/400x300" alt="placeholder">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="http://loripsum.net/" target="_blank">Igitur neque stultorum quisquam beatus neque sapientium non beatus.</a> Videamus animi partes, quarum est conspectus illustrior; Quae enim adhuc protulisti, popularia sunt, ego autem a te elegantiora desidero. Sed quae tandem ista ratio est? <b>Expectoque quid ad id, quod quaerebam, respondeas.</b> <mark>Quamvis enim depravatae non sint, pravae tamen esse possunt.</mark> In contemplatione et cognitione posita rerum, quae quia deorum erat vitae simillima, sapiente visa est dignissima. De vacuitate doloris eadem sententia erit. </p>
+
+          <p>Duo Reges: constructio interrete. Hos contra singulos dici est melius. Quo invento omnis ab eo quasi capite de summo bono et malo disputatio ducitur. Sed venio ad inconstantiae crimen, ne saepius dicas me aberrare; Nos paucis ad haec additis finem faciamus aliquando; Sic, et quidem diligentius saepiusque ista loquemur inter nos agemusque communiter. </p>
+
+          <p>O magnam vim ingenii causamque iustam, cur nova existeret disciplina! Perge porro. At, si voluptas esset bonum, desideraret. An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Non igitur bene. </p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/block-loader.js"></script>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      widgetLoader.load('data/demo-block.json', widgetLoader.append);
+    });
+  </script>
+
+</html>

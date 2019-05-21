@@ -1,0 +1,11 @@
+{
+	"name" : "mc_subscribe_form",
+	"target" : "#mainBody",
+	"html" : "<h1 class=demo-block>This text is dynamically added</h1>",
+	"css" : [
+		"css/demo-styles.css"
+	],
+  "js" : [
+  	"js/demo-block-bundle.js"
+  ]
+}
