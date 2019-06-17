@@ -1,18 +1,18 @@
 /*
-Block Injector
+Widget Loader
 Author: Kyle Langford
 
 Use:
 ===
-<script src="http://hlthlink.com/widgets/lw-block-loader.js" type="text/javascript"></script>
+<script src="http://domain.com/widgets/block-loader.js" type="text/javascript"></script>
 
 <script>
   
-  Linkwell.load(url, callback);
+  demoBlock.load(url, callback);
 
-  Linkwell.load('data/form.json', Linkwell.append);
+  demoBlock.load('data/form.json', demoBlock.append);
 
-  Linkwell.load('data/form.json', function(data) {
+  demoBlock.load('data/form.json', function(data) {
     data.target = "New Target"
     console.log(data);
   });
@@ -24,14 +24,13 @@ JSON Example:
 Notes: Make sure to escape double quotes '\"'
 =============
 {
-  "name" : "mc_subscribe_form",
   "target" : "#element",
   "html" : "<div id=\"element\"></div>",
   "css" : [
-    "css/nvi-subscribe-form.css"
+    "css/block.css"
   ],
   "js" : [
-    "js/form-submit.js"
+    "js/block.js"
   ]
 }
 
@@ -52,7 +51,6 @@ var widgetLoader = (function() {
       throw new Error('Invalid URL: ', url);
     } else if (typeof callback !== 'function') {
       throw new Error('Callback provided is not a function: ', callback);
-      // Show list of possible methods
     }
 
     request.onload = function() {

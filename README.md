@@ -1,20 +1,15 @@
 ## Ways to Init Injector
 
 ```javascript
-
-// https://hle.dev-hlthlink.com/sites/americas_best/public/js/hle-block-loader.js
-// https://hle.dev-hlthlink.com/sites/americas_best/public/data/email-subscribe-form.json
-// build/data/email-subscribe-form.json
-
 document.addEventListener("DOMContentLoaded", function() {
-  HleBlock.load('https://hle.dev-hlthlink.com/sites/americas_best/public/data/email-subscribe-form.json', HleBlock.append);
+  widgetLoader.load('/my/data/data.json', widgetLoader.append);
 
-  HleBlock.load('https://hle.dev-hlthlink.com/sites/americas_best/public/data/email-subscribe-form.json', HleBlock.replace);
+  widgetLoader.load('/my/data/data.json', widgetLoader.replace);
 
-  HleBlock.load('https://hle.dev-hlthlink.com/sites/americas_best/public/data/email-subscribe-form.json', function(data) {
+  widgetLoader.load('/my/data/data.json', function(data) {
 
   	data.target = "#newTarget";
-  	HleBlock.append(data);
+  	widgetLoader.append(data);
 
   });
 
