@@ -35,14 +35,14 @@ function css() {
     );
 }
 
+function createErrorHandler(name) {
+  return function(err) {
+    console.error('Error from ' + name + ' in compress task', err.toString());
+  };
+}
+
 // JS
 function js() {
-  function createErrorHandler(name) {
-    return function(err) {
-      console.error('Error from ' + name + ' in compress task', err.toString());
-    };
-  }
-
   return gulp
     .src(['./src/block-loader.js'])
     .pipe(sourcemaps.init())
