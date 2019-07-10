@@ -1,1 +1,0 @@
-{"version":3,"sources":["demo-block-init.js"],"names":["demoBlock"],"mappings":"AAWGA","file":"../demo-block-init.js","sourcesContent":["/*\nDemo Widget\nAuthor: Kyle Langford\n*/\n\n(function (demoBlock) {\n\n  'use strict';\n\n\t// demoBlock.init();\n\n})(demoBlock);"]}

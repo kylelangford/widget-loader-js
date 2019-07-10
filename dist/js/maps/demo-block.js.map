@@ -1,1 +1,0 @@
-{"version":3,"sources":["demo-block.js"],"names":["demoBlock"],"mappings":"AAKA,IAAIA,eAAY","file":"../demo-block.js","sourcesContent":["/*\nDemo Widget\nAuthor: Kyle Langford\n*/\n\nvar demoBlock = (function() {\n\n  'use strict';\n\n})();\n\n\n\n\n\n"]}

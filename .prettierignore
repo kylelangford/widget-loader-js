@@ -1,0 +1,12 @@
+# ignore config files
+*.html
+*.json
+
+# ignore processed CSS
+css
+
+# Ignore Node Dependencies
+node_modules
+
+# Ignore Vendor JS
+vendor
