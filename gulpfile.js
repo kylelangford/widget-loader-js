@@ -44,7 +44,7 @@ function createErrorHandler(name) {
 // JS
 function js() {
   return gulp
-    .src(['./src/block-loader.js'])
+    .src(['./src/widget-loader.js'])
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .on('error', createErrorHandler('uglify'))
@@ -85,8 +85,8 @@ function js() {
 
 function publishMinified() {
   return gulp
-    .src(['./src/block-loader.js'])
-    .pipe(concat('block-loader.min.js'))
+    .src(['./src/widget-loader.js'])
+    .pipe(concat('widget-loader.min.js'))
     .pipe(uglify())
     .on('error', createErrorHandler('uglify'))
     .pipe(gulp.dest('./dist/'))
@@ -101,7 +101,7 @@ function publishMinified() {
 
 function publish() {
   return gulp
-    .src(['./src/block-loader.js'])
+    .src(['./src/widget-loader.js'])
     .pipe(gulp.dest('./dist/'))
     .pipe(
       notify({

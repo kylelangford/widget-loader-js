@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-### Methods
+### Public Methods
 
 - `load` takes two arguements (url, callback).
 - `append` append elem.innerHTML with data.
@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 - `target` elem to append or replace html
 - `html` this is the HTML that will be rendered into the page.
-- `css` This stylesheet will be added into the <head> of the page.
-- `js` This script will be added to the <head> of the page.
+- `css` This stylesheet will be added into the head of the page.
+- `js` This script will be added to the head of the page.
 
 ### Notes:
 
