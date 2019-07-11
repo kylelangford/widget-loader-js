@@ -1,1 +1,1 @@
-{"version":3,"file":"../demo-styles.css","sources":["demo-styles.scss"],"sourcesContent":["@charset \"UTF-8\";\n"],"names":[],"mappings":""}
+{"version":3,"file":"../demo-styles.css","sources":["demo-styles.scss"],"sourcesContent":["@charset \"UTF-8\";\n\n.custom-style {\n\tbackground-color: red;\n\tcolor: white;\n\tpadding: 2em;\n\tmargin-top: 1em;\n}\n"],"names":[],"mappings":"AAEA,AAAA,aAAa,CAAC;EACb,gBAAgB,EAAE,GAAG;EACrB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,GAAG;CACf"}

@@ -1,29 +1,8 @@
 # Block Loader
 
-Simple helper to inject html, css, js from JSON into a webpage.
+Singleton helper to inject html, css, js from JSON into a webpage.
 
 ## How do I use it?
-
-```javascript
-document.addEventListener('DOMContentLoaded', function() {
-	// Append to Element
-	widgetLoader.load('/my/data/data.json', widgetLoader.append);
-
-	// Replace Element
-	widgetLoader.load('/my/data/data.json', widgetLoader.replace);
-
-	// Custom Callback
-	widgetLoader.load('/my/data/data.json', function(data) {
-		data.target = '#newTarget';
-		widgetLoader.append(data);
-	});
-});
-```
-
-### Options
-
-- `append` Append innerHTML with Data.
-- `replace` Replace innerHTML with Data.
 
 ### Include Script
 
@@ -31,16 +10,58 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="assets/js/block-loader.min.js"></script>
 ```
 
+### Run on DOMContentLoaded
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+  // Append to Element
+  widgetLoader.load('/my/data/data.json', widgetLoader.append);
+
+  // Replace Element
+  widgetLoader.load('/my/data/data.json', widgetLoader.replace);
+
+  // Custom Callback
+  widgetLoader.load('/my/data/data.json', function(data) {
+    data.target = '#newTarget';
+    widgetLoader.append(data);
+  });
+});
+```
+
+### Methods
+
+- `load` takes two arguements (url, callback).
+- `append` append elem.innerHTML with data.
+- `replace` replace elem.innerHTML with data.
+
 ## How does it work?
 
 ```json
 {
-	"target": "#mainBody",
-	"html": "<h1 class=demo-block>This text is dynamically added</h1>",
-	"css": ["css/demo-styles.css"],
-	"js": ["js/demo-block-bundle.js"]
+  "target": "#mainBody",
+  "html": "<h1 class=demo-block>This text is dynamically added</h1>",
+  "css": ["css/demo-styles.css"],
+  "js": ["js/demo-block-bundle.js"]
 }
 ```
+
+- `target` elem to append or replace html
+- `html` this is the HTML that will be rendered into the page.
+- `css` This stylesheet will be added into the <head> of the page.
+- `js` This script will be added to the <head> of the page.
+
+### Notes:
+
+Quotes must be esacped
+
+```json
+"html": "<h1 class=\"demo-block\">This text is dynamically added</h1>"
+
+```
+
+## Resources:
+
+https://kangax.github.io/html-minifier/
 
 ## Built With
 
