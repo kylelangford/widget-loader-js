@@ -1,6 +1,6 @@
-# Block Loader
+# Widget Loader
 
-Singleton helper to inject html, css, js from JSON into a webpage.
+Singleton helper to inject HTML, CSS, JS from JSON/API into a webpage.
 
 ## How do I use it?
 
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ```json
 {
   "target": "#mainBody",
-  "html": "<h1 class=demo-block>This text is dynamically added</h1>",
+  "html": "<h1>This text is dynamically added</h1>",
   "css": ["css/demo-styles.css"],
   "js": ["js/demo-block-bundle.js"]
 }
@@ -52,10 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Notes:
 
-Quotes must be esacped
+Quotes must be esacped.
 
 ```json
-"html": "<h1 class=\"demo-block\">This text is dynamically added</h1>"
+"html": "<h1 class=\"demo-block another-class\">This text is dynamically added</h1>"
+
+```
+
+For single classes/attr quotes can be ommitted and be valid HTML.
+
+```json
+"html": "<h1 class=demo-block>This text is dynamically added</h1>"
 
 ```
 
@@ -77,4 +84,4 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details (coming soon)
