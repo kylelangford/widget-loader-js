@@ -7,7 +7,7 @@
   },
   "author": "Brunello Inc",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-modernizr": "^3.2.0",
